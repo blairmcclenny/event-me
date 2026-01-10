@@ -4,7 +4,7 @@ import USERS from './data/users.json' with {type: 'json'};
 import RSVPS from './data/rsvps.json' with {type: 'json'};
 
 
-const db = new Database('src/sqlite.db', { verbose: console.log });
+const db: Database.Database = new Database('src/sqlite.db', { verbose: console.log });
 
 console.log(`Initializing database: ${db.name} `);
 
